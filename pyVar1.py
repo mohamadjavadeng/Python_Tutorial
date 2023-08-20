@@ -70,3 +70,4 @@ print(x)
 thisdict["year"] = 2015
 thisdict["color"] = "red"
 print(thisdict)
+x = thisdict.keys()
