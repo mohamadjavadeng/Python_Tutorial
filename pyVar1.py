@@ -34,6 +34,39 @@ x = ("apple", "banana", "cherry")
 y = list(x)
 y[1] = "kiwi"
 x = tuple(y)
-
 print(x)
 
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+
+#----- Set ----#
+thisset = {"apple", "banana", 1, "cherry", 5, 2}
+print(thisset)
+print("banana" in thisset)  # True
+
+# add to set
+thisset.add("orange")
+print(thisset)
+
+thatset = {1, 2, True, False}
+print(thatset)
+
+#---- dictionary ----#
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+print(thisdict["brand"])
+print(thisdict["model"])
+print(thisdict["year"])
+x = thisdict.keys()
+print(x)
+x = list(x)
+print(x)
+thisdict["year"] = 2015
+thisdict["color"] = "red"
+print(thisdict)
