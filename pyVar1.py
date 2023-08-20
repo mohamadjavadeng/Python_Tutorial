@@ -1,5 +1,4 @@
-import numpy as np
-
+## Variables
 x1 = 1
 x2 = 2.3
 x3 = "3"
