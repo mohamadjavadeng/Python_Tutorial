@@ -32,3 +32,14 @@ a, b, c = (10, 5, 3)
 if a > b and a > c:
     print("a is the greatest parameter")
 #------------------------------------
+# while Loop
+z = 1
+while z in range(10):
+    print(z)
+    z = 2 * z
+
+list1 = ["Donya", "Mohammadjavad", "leila", "rozi", "amir"]
+while len(list1) > 2:
+    list1.remove(list1[-1])
+
+print(list1)
