@@ -43,3 +43,11 @@ while len(list1) > 2:
     list1.remove(list1[-1])
 
 print(list1)
+
+#for loop
+list1 = ["Donya", "Mohammadjavad", "leila", "rozi", "amir"]
+for i in range(10):
+    print(i, end=',')
+print()
+for name in list1:
+    print(name, end=',')
