@@ -51,3 +51,19 @@ for i in range(10):
 print()
 for name in list1:
     print(name, end=',')
+
+# while vs for
+print("------------ while vs for --------------")
+list1 = ["saipa", "IRkh", "MVM", "MVM", "saipa", "Lifan", "IRkh", "MVM", "saipa"]
+list1.remove("IRkh")
+print(list1)
+list1 = ["saipa", "IRkh", "MVM", "MVM", "saipa", "Lifan", "IRkh", "MVM", "saipa"]
+while "IRkh" in list1:
+    list1.remove("IRkh")
+print(list1)
+list1 = ["saipa", "IRkh", "MVM", "MVM", "saipa", "Lifan", "IRkh", "MVM", "saipa"]
+for i in range(len(list1)):
+    print(i)
+    if list1[i] == "IRkh":
+        list1.remove(list1[i])
+print(list1)
