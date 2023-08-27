@@ -56,3 +56,13 @@ def Adder(x):
         return 1
     return sum
 print(Adder(6))
+
+def factorial(x):
+    if x != 0:
+        fac = x * factorial(x-1)
+    else:
+        return 1
+    return fac
+
+
+print(factorial(6))
