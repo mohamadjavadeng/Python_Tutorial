@@ -4,4 +4,5 @@ class Firstclass():
 
 p1 = Firstclass()
 print(p1)
+print("hello")
 print(p1.x)
