@@ -14,4 +14,4 @@ for i in range(len(Alist)):
 for i in range(len(Alist)):
     print(globals()['list%s' % i])
 
-print(list1)
+print(list0)
