@@ -2,7 +2,7 @@ import serial
 import minimalmodbus
 from time import sleep
 
-client1 = minimalmodbus.Instrument('COM23', 1, debug=False)  # port name, slave address (in decimal)
+client1 = minimalmodbus.Instrument('COM5', 1, debug=False)  # port name, slave address (in decimal)
 client1.serial.baudrate = 9600  # baudrate
 client1.serial.bytesize = 7
 client1.serial.parity   = serial.PARITY_EVEN
@@ -22,5 +22,6 @@ coil_value = client1.read_bit(1280, functioncode=1)
 
 # Print the value
 print(f"Value of coil 0: {coil_value}")
+client1.write_bit(1280, not coil_value, functioncode=5)
 
 client1.close_port_after_each_call = True
