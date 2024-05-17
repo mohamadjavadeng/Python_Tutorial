@@ -2,7 +2,7 @@ import serial
 import minimalmodbus
 from time import sleep
 
-client1 = minimalmodbus.Instrument('COM5', 1, debug=False)  # port name, slave address (in decimal)
+client1 = minimalmodbus.Instrument('COM23', 1, debug=False)  # port name, slave address (in decimal)
 client1.serial.baudrate = 9600  # baudrate
 client1.serial.bytesize = 7
 client1.serial.parity   = serial.PARITY_EVEN
